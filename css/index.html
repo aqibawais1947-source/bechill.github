@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>siuu</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Intro text above letter emoji -->
+  <h4 class="introText">Ohh you Opened it? WOW mind blowingg </h4>
+
+  <!-- Heart Letter Emoji (start screen) -->
+  <div class="letterIcon" id="letterIcon" onclick="showLetter()">
+    ✉️
+  </div>
+
+  <!-- Letter Box (message) -->
+  <div class="letterBox" id="letterBox">
+    <P>
+<b>September 15 </b>
+
+      </P>
+      <P>
+      sounds scary, right? Just kidding.
+      But it is a day that means something to me.
+      And I made something dar dar keh haha 💌
+    </p>
+    <p class="continueText" onclick="showCard()">see more...</p>
+  </div>
+
+  <!-- Birthday Card -->
+  <div class="birthdayCard" id="birthdayCard">
+    <div class="cardFront">
+      <h3 class="happy">HAPPIEST BIRTHDAY 🌷 </h3>
+      <div class="cookie"></div>
+    </div>
+    <div class="cardInside">
+      <h3 class="back">HAPPIEST BIRTHDAY</h3>
+      <p>
+        "Mashallah, it's been a long journey — 21 years of existence… WOW.
+        You once told me on my birthday to buy a cookie and eat it under a tree…
+        Well, guess what?
+        Today, it's your turn!
+        I've been waiting for this moment, haha.
+        So go on — buy a small cookie, find a peaceful green tree,
+        and eat that cookie right there.
+        Don't save it, don't store it…
+        just enjoy it.
+        And — happiest birthday, Doctor Sahab!
+        Be happy and smile (it's easy: left cheek up, right cheek up 😊)."
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showLetter() {
+      document.getElementById("letterIcon").style.display = "none";
+      document.getElementById("letterBox").style.display = "block";
+      document.querySelector(".introText").style.display = "none";
+    }
+
+    function showCard() {
+      document.getElementById("letterBox").style.display = "none";
+      document.getElementById("birthdayCard").style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
